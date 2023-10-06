@@ -14,4 +14,10 @@ SELECT \* FROM `courses` WHERE `cfu` > 10;
 
 - **Selezionare tutti i corsi che valgono più di 10 crediti**
 
-SELECT \* FROM `students` WHERE `date_of_birth` < '1993%'
+SELECT \* FROM `students` WHERE `date_of_birth` < '1993%';
+
+**Query 4**
+
+- **Selezionare tutti i corsi del primo semestre del primo anno di un qualsiasi corso di laurea**
+
+SELECT \* FROM `courses` WHERE `period` LIKE 'I semestre' AND `year` LIKE 1;
